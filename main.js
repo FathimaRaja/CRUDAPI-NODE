@@ -3,6 +3,8 @@ import productRoutes from "./routes/products.route.js"
 import connectDb from "./lib/db.js";
 const app= express();
 const PORT=7000;
+//Data understanding middleware
+app.use(express.json());
 //Db connection
 connectDb();
 app.get('/',(req,res)=>{ res.json({msg:"Hello students ."});})

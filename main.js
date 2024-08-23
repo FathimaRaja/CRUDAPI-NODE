@@ -1,16 +1,11 @@
 import express from "express";
+import productRoutes from "./routes/products.route.js"
 const app= express();
 const PORT=7000;
-app.get('/',(req,res)=>{ res.json({msg:"Hello students"});})
+app.get('/',(req,res)=>{ res.json({msg:"Hello students ."});})
 //CRUD functionality of Products
-//Reading
-app.get('/Products',()=>{});
-//Creating or Adding
-app.post('/Products',()=>{});
-//Updating
-app.put('/Products/:id',()=>{});
-//Deleting
-app.delete('/Products/:id',()=>{});
+app.use('/products',productRoutes);
+
 
 
 

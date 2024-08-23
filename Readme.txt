@@ -8,3 +8,5 @@ Basic CRUD using Node js and MongoDB
 6.git push -u origin master
 7.npm init
 8.node "filename"
+9.npm install nodemon
+10.nodemon "filename"
